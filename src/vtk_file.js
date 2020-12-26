@@ -5,7 +5,7 @@ import vtkFullScreenRenderWindow from 'vtk.js/Sources/Rendering/Misc/FullScreenR
 import vtkMapper from 'vtk.js/Sources/Rendering/Core/Mapper';
 import vtkPolyDataReader from 'vtk.js/Sources/IO/Legacy/PolyDataReader';
 
-const fileName = 'Longitudinal_90_0.0.vtk'; // 'uh60.vtk'; // 'luggaBody.vtk';
+const fileName = 'Longitudinal_90_0.0_heatmap.vtk'; // 'uh60.vtk'; // 'luggaBody.vtk';
 
 // ----------------------------------------------------------------------------
 // Standard rendering code setup
@@ -41,6 +41,10 @@ reader.setUrl(`${fileName}`).then(() => {
 // Make some variables global so that you can inspect and
 // modify objects in your browser's developer console:
 // -----------------------------------------------------------
+
+
+// Trying to get colors
+// reader.getOutputData(0).getCellData().getArray(0).getData()
 
 global.reader = reader;
 global.fullScreenRenderer = fullScreenRenderer;

@@ -4,7 +4,7 @@ const vtkRules = require('vtk.js/Utilities/config/dependency.js').webpack.core.r
 
 // const example = process.env['EXAMPLE'].replace(/[\/]|\.\./g, '') || 'cone.js';
 
-const filename = 'obj_file';
+const filename = 'vtk_file';
 
 module.exports = {
   entry: {
